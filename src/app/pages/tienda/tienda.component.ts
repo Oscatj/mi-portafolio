@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
-  selector: 'app-portafolio',
-  templateUrl: './portafolio.component.html',
-  styleUrls: ['./portafolio.component.css']
+  selector: 'app-tienda',
+  templateUrl: './tienda.component.html',
+  styleUrls: ['./tienda.component.css']
 })
-export class PortafolioComponent implements OnInit {
+export class TiendaComponent implements OnInit {
 
   constructor(public productosServices: ProductosService) { }
 
