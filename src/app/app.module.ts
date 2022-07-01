@@ -14,6 +14,10 @@ import { TiendaComponent } from './pages/tienda/tienda.component';
 
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import { DarkPipe } from './pipes/dark-mode.pipe';
 
 
 @NgModule({
@@ -25,14 +29,18 @@ import {MatButtonModule} from '@angular/material/button';
     AboutComponent,
     ItemComponent,
     ContactComponent,
-    TiendaComponent
+    TiendaComponent,
+    DarkPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

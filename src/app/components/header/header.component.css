@@ -1,0 +1,27 @@
+*{
+    color: rgb(202, 17, 94);
+
+}
+a:hover{
+    color: gray;
+}
+.container{
+    position: fixed;
+    bottom: 170px;
+}
+.container2{
+    position: fixed;
+    margin-left: 11px;
+    bottom: 220px;
+}
+.container img{
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgba(205, 10, 111, 0.349);
+    width: 35px;
+    height: 35px;
+    line-height: 55px;
+    align-items: center;
+    border-radius: 50%;
+}

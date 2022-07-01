@@ -14,3 +14,46 @@
   left: 0;
   bottom: 0;
 }
+.styleImg{
+  width: 50px;
+  color: rgb(202, 17, 94);
+}
+.sub-title{
+  text-align: center;
+  color: rgb(202, 17, 94);
+  font-size: 40px;
+}
+.card{
+  margin: 5px 10px;
+}
+.title{
+  text-align: center; 
+  margin-top: 7px;
+}
+
+.position-button{
+  text-align: center;
+  color: rgb(27, 27, 95);
+  height: 100%;
+  margin: 0;
+}
+.margen .btn-success {
+  margin-top: 32px;
+}
+.margen{
+  margin: 10px 0;
+}
+.position-button .btn-secondary{
+  margin-right: 790px;  
+}
+.btn .btn-primary{
+  font-size: medium;
+  margin-top: 20px; 
+}
+.form{
+  background-color: antiquewhite;
+  width: 100%;
+  margin: auto;
+  max-width: 1500px;
+  padding: 4.5em 3em;
+}

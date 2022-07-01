@@ -1,9 +1,11 @@
-<header>
+<div [class]="dark| darkMode">
+
   <app-header></app-header>
-</header>
+
 <section class="ae-container-fluid rk-main">
   <router-outlet></router-outlet>
 </section>
 <footer>
   <app-footer></app-footer>
 </footer>
+</div>

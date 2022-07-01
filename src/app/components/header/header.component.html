@@ -16,10 +16,10 @@
       <nav class="rk-navigation">
         <ul class="rk-menu">
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="tienda" class="rk-menu__link">Home</a>
+            <a routerLink="portafolio" class="rk-menu__link">Portfolio</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="portafolio" class="rk-menu__link">Portfolio</a>
+            <a routerLink="tienda" class="rk-menu__link">Tienda</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
             <a routerLink="about" class="rk-menu__link">About</a>
@@ -37,5 +37,16 @@
           </label>
         </form>
       </nav>
-    </div>
-  </header>
+  </div>
+
+<div class="container">
+  <a  src="assets/img/sunny.png" alt="svg#sunny"></a>
+    <svg>
+      <use xlink:href="assets/img/symbols.svg#confi" width="40px"></use>
+    </svg>
+</div>
+<div class="container2">
+  <svg >
+    <use class="conf" (click)= "changeMode()" xlink:href="assets/img/symbols.svg#sunny" width="40px"></use>
+  </svg>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeServiceService } from './services/dark-mode-service.service';
 import { InfoPaginaService } from './services/info-pagina.service';
 import { ProductosService } from './services/productos.service';
 
@@ -9,7 +10,10 @@ import { ProductosService } from './services/productos.service';
 })
 export class AppComponent {
   constructor(public _infoPagina : InfoPaginaService,
-              public _productos : ProductosService){
+              public _productos : ProductosService,
+              private darkModeService: DarkModeServiceService){}
 
-  }
+              get dark(){
+                return this.darkModeService.dark;
+              }
 }
