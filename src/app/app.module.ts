@@ -17,7 +17,6 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
-import { DarkPipe } from './pipes/dark-mode.pipe';
 import { DestrezasComponent } from './pages/destrezas/destrezas.component';
 import { SearchComponent } from './pages/search/search.component';
 
@@ -32,7 +31,6 @@ import { SearchComponent } from './pages/search/search.component';
     ItemComponent,
     ContactComponent,
     TiendaComponent,
-    DarkPipe,
     DestrezasComponent,
     SearchComponent
   ],
