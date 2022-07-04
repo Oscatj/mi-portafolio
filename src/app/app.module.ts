@@ -19,6 +19,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { DestrezasComponent } from './pages/destrezas/destrezas.component';
 import { SearchComponent } from './pages/search/search.component';
+import { ProyectosPortafolioComponent } from './pages/proyectos-portafolio/proyectos-portafolio.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SearchComponent } from './pages/search/search.component';
     ContactComponent,
     TiendaComponent,
     DestrezasComponent,
-    SearchComponent
+    SearchComponent,
+    ProyectosPortafolioComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { TiendaComponent } from './pages/tienda/tienda.component';
 import { DestrezasComponent } from './pages/destrezas/destrezas.component';
 import { SearchComponent } from './pages/search/search.component';
+import { ProyectosPortafolioComponent } from './pages/proyectos-portafolio/proyectos-portafolio.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'search/:termino', component: SearchComponent},
   {path: 'tienda', component: TiendaComponent},
   {path: 'portafolio', component: PortafolioComponent},
+  {path: 'proyectos', component: ProyectosPortafolioComponent},
   {path: 'about', component: AboutComponent},
   {path: 'item/:id', component: ItemComponent},
   {path: 'contact', component: ContactComponent},
