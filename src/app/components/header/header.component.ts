@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DarkModeServiceService } from 'src/app/services/dark-mode-service.service';
 import { InfoPaginaService } from 'src/app/services/info-pagina.service';
 
@@ -12,13 +13,20 @@ export class HeaderComponent implements OnInit {
   changeMode(){
     this.darkModeService.changeMode();
   }
-  constructor(public _service: InfoPaginaService, private darkModeService: DarkModeServiceService) { }
+  constructor(public _service: InfoPaginaService, 
+              private darkModeService: DarkModeServiceService,
+              private router: Router) { }
 
     ngOnInit(): void {
     }
     get dark () {
       return this.darkModeService.dark;
     }
-    
+    buscarProducto(termino: string){
+      if(termino.length < 1){
+          return;
+      }
+      this.router.navigate(['/search', termino]);
+    }
 
 }

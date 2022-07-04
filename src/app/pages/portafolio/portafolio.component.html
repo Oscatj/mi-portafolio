@@ -1,28 +1,25 @@
-  <mat-grid-list cols="2">
-    <mat-grid-tile>
-      <section>
-          <figure class="hero__picture">
-            <img
-              src="../../../assets/svg/perfil.svg"
-              alt="programing"
-              width="500px"
-            />
-          </figure>
-      </section>
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <section>
-        <h2>Developer Frontend</h2>
-        <h3>
-          <button
-            mat-raised-button
-            [routerLink]="['/SobreMi']"
-            target="_blank"
-          >
-            Conoce más
-          </button>
-        </h3>
-      </section>
-    </mat-grid-tile>
-  </mat-grid-list>
-  
+<section class="portafolio">
+<div class="in-flex">
+      <figure class="hero__picture">
+        <img
+          src="../../../assets/svg/perfil.svg"
+          alt="programing"
+          width="500px"
+        />
+      </figure>
+</div>
+<div class="in-flex">
+      <div class="wrapper">
+        <div class="static-txt">Soy</div>
+        <ul class="dynamic-txt">
+          <li><span>Oscarina</span></li>
+          <li><span>Developer</span></li>
+          <li><span>Analista</span></li>
+          <li><span>Project Mannager</span></li>
+        </ul>
+      </div>
+      <div class="cv">
+        <a href="/cv.pdf" download="CV Oscarina Tejada">DESCARGA AQUI MI CV</a>
+        <i class="fa-thin fa-arrow-down-to-square"></i>
+    </div>
+  </div>

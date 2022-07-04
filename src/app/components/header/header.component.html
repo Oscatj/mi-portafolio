@@ -12,41 +12,49 @@
       </svg>
     </label>
     <div class="ae-container-fluid rk-topbar">
-      <h1 class="rk-logo"><a routerLink="">{{_service.info.titulo}}<sup>CV</sup></a></h1>
+      <h1 class="rk-logo"> <a class="logo" routerLink="">Oscarina Tejada</a></h1>
       <nav class="rk-navigation">
         <ul class="rk-menu">
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="portafolio" class="rk-menu__link">Portfolio</a>
+            <a routerLink="portafolio" class="rk-menu__link">Portafolio</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
             <a routerLink="tienda" class="rk-menu__link">Tienda</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="about" class="rk-menu__link">About</a>
+            <a routerLink="about" class="rk-menu__link">Sobre mi</a>
           </li>
           <li routerLinkActive="active" class="rk-menu__item">
-            <a routerLink="contact" class="rk-menu__link">Contact</a>
+            <a routerLink="contact" class="rk-menu__link">Contacto</a>
           </li>
         </ul>
-        <form class="rk-search">
-          <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+        <div class="rk-search">
+          <input type="text" 
+                 (keyup.enter)="buscarProducto(txtBuscar.value)"
+                 placeholder="Buscar en la tienda" 
+                 id="urku-search" 
+                 class="rk-search-field"
+                 #txtBuscar>
           <label for="urku-search">
             <svg>
               <use xlink:href="assets/img/symbols.svg#icon-search"></use>
             </svg>
           </label>
-        </form>
+        </div>
       </nav>
   </div>
-
+<!--
 <div class="container">
+<div class="conf">
   <a  src="assets/img/sunny.png" alt="svg#sunny"></a>
     <svg>
       <use xlink:href="assets/img/symbols.svg#confi" width="40px"></use>
     </svg>
 </div>
-<div class="container2">
+
+<div class="dark">
   <svg >
-    <use class="conf" (click)= "changeMode()" xlink:href="assets/img/symbols.svg#sunny" width="40px"></use>
+    <use (click)= "changeMode()" xlink:href="assets/img/symbols.svg#sunny" width="40px"></use>
   </svg>
 </div>
+-->

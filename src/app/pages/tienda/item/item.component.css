@@ -1,0 +1,20 @@
+header{
+    margin-left: 60px;
+    width:1100px;
+}
+header .item-inside__meta{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.226);
+    width:1100px;
+    height: 120px;
+}
+body .ae-container-fluid{
+    margin-left: 35px;
+}
+body .au-xs-ta-center{
+    margin: 30px;
+}
+body .rk-portfolio--inner{
+    margin-left: 65px;
+    text-align: justify;
+}

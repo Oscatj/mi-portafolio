@@ -1,12 +1,74 @@
-button{
-    color: aliceblue;
-    background-color: rgb(63,61,86);
-    font-size: 20px;
-    width: 210px; 
-    padding: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+*{
+    padding: 0;
+    margin: 0;
 }
-button:hover{
-    color: rgb(209, 7, 114);
-    background-color: rgba(192, 192, 196, 0.489);
+.portafolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.cv a{
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(189, 30, 96);
+    border: 1px solid rgb(5, 13, 100);
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.cv a:hover{
+    color: white;
+    background-color: rgb(173, 11, 76);
+    border: 1px solid rgba(5, 13, 100, 0);
+    margin: 20px;
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-txt li{
+    color: rgb(183, 23, 68);
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txt li span{
+    position: relative;
+}
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid rgb(183, 23, 68);
+    background-color: rgb(255, 255, 255);
+    animation: typing2 1.5s steps(16) infinite;
+}
+@keyframes typing2 {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }

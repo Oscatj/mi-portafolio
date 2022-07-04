@@ -9,6 +9,7 @@ export class ProductosService {
   
   cargando = true;
   productos: any = [];
+  productosFiltrado: Producto[] = [];
 
   constructor(private http : HttpClient) {
 
@@ -29,5 +30,11 @@ export class ProductosService {
   }
   getProducto(id: string) {
     return this.http.get(`https://portafolio-angular-63d4c-default-rtdb.firebaseio.com/productos/${id}.json`)
+  }
+
+  buscarProductos(termino: string){
+      this.productosFiltrado = this.productos.filter(() =>{
+        return true;
+      });
   }
 }

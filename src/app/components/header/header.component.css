@@ -1,20 +1,46 @@
 *{
-    color: rgb(202, 17, 94);
+    color: #ae0548;   
+}
+header .rk-topbar{
+    font-family: Gentium Book Plus;
+    position: end;
+}
+header .rk-topbar h1 .logo{
+    font-family: Bangers;
+    color: #ae0548;
+    margin-bottom: 40px;
+}
+header .rk-topbar h1 sup{
+    font-family: Book Plus;
+    font-size: 10px;
 
+}
+.container svg use {
+    color: #dc1a67;
 }
 a:hover{
     color: gray;
 }
-.container{
+.dark{
     position: fixed;
     bottom: 170px;
+    left: 10px;
 }
-.container2{
+.conf{
     position: fixed;
-    margin-left: 11px;
+    left: 12px;
     bottom: 220px;
+    animation: movimiento ls infinite linear;
 }
-.container img{
+@keyframes movimiento {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(100px);
+    }
+}
+.conf img{
     display: block;
     text-decoration: none;
     padding: 7px;
